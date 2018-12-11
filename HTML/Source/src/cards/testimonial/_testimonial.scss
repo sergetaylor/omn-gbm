@@ -1,0 +1,53 @@
+.card-testimonial {
+    max-width: 650px;
+    .uk-card-body {
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+        background: $white;
+        border-radius: 4px;
+        color: $slate-blue;
+        float: right;
+        z-index: 1;
+        margin-top: -100px;
+        em {
+            color: $slate-blue;
+            font-weight: bold;
+        }
+
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTQwIDk2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNDAgOTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsdGVyOnVybCgjQWRvYmVfT3BhY2l0eU1hc2tGaWx0ZXIpO30uc3Qxe2ZpbGw6I0ZGRkZGRjt9LnN0MnttYXNrOnVybCgjYl8xXyk7ZmlsbDojRTRFNUVBO308L3N0eWxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzIDYpIj48ZGVmcz48ZmlsdGVyIGlkPSJBZG9iZV9PcGFjaXR5TWFza0ZpbHRlciIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTE0LjMiIGhlaWdodD0iODMuNCI+PGZlQ29sb3JNYXRyaXggIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAxIDAiLz48L2ZpbHRlcj48L2RlZnM+PG1hc2sgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjExNC4zIiBoZWlnaHQ9IjgzLjQiIGlkPSJiXzFfIj48ZyBjbGFzcz0ic3QwIj48cGF0aCBpZD0iYV8xXyIgY2xhc3M9InN0MSIgZD0iTTExNC4zLDgzLjRIMEwwLDBsMTE0LjMsMFY4My40eiIvPjwvZz48L21hc2s+PHBhdGggY2xhc3M9InN0MiIgZD0iTTYuNiw3Mi45Yy0yLTMtMy42LTYuNy00LjgtMTEuMUMwLjYsNTcuNCwwLDUyLjgsMCw0OGMwLTEwLjQsMi43LTE5LjgsNy45LTI4LjJjNS4zLTguNCwxMy4xLTE1LDIzLjYtMTkuOGwyLjcsNS40Yy01LjgsMi40LTEwLjksNi4xLTE1LjIsMTEuMWMtNC4zLDUtNi45LDEwLjEtNy43LDE1LjNjLTAuNiwyLjQtMC45LDQuNy0wLjksNi45YzAsMiwwLjMsMy45LDAuOSw1LjdjNC40LTQuOCwxMC4yLTcuMiwxNy40LTcuMmM3LDAsMTIuNywyLjEsMTcuMSw2LjJjNC40LDQuMSw2LjYsOS44LDYuNiwxN2MwLDYuOC0yLjMsMTIuNC02LjksMTYuN2MtNC42LDQuMy0xMC41LDYuNC0xNy43LDYuNEMxOC4xLDgzLjQsMTEsNzkuOSw2LjYsNzIuOSBNNjguNCw3Mi45Yy0yLTMtMy42LTYuNy00LjgtMTEuMWMtMS4yLTQuNC0xLjgtOS0xLjgtMTMuOGMwLTEwLjQsMi42LTE5LjgsOC0yOC4yQzc1LDExLjQsODIuOSw0LjgsOTMuMywwTDk2LDUuNGMtNS44LDIuNC0xMC45LDYuMS0xNS4yLDExLjFjLTQuMyw1LTYuOSwxMC4xLTcuNywxNS4zYy0wLjYsMi40LTAuOSw0LjctMC45LDYuOWMwLDIsMC4zLDMuOSwwLjksNS43YzQuNC00LjgsMTAuMi03LjIsMTcuNC03LjJjNywwLDEyLjcsMi4xLDE3LjEsNi4yYzQuNCw0LjEsNi42LDkuOCw2LjYsMTdjMCw2LjgtMi4zLDEyLjQtNi45LDE2LjdjLTQuNiw0LjMtMTAuNSw2LjQtMTcuNyw2LjRDNzkuOSw4My40LDcyLjgsNzkuOSw2OC40LDcyLjkiLz48L2c+PC9zdmc+);
+
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 20px 20px;
+        @include md{
+            width: 340px;
+        }
+    }
+    .card-media {
+        position: relative;
+        width: 90%;
+        z-index: 0;
+        
+        img {
+            border-radius: 4px;
+        }
+        >div {
+            position: absolute;
+            padding-top: 20px;
+            max-width: calc( 100% - 200px);
+            @include md{
+                max-width: calc( 100% - 200px);
+            }
+            h3{
+                margin: 0;
+                font-style: italic;
+                @include font-size($sm-font);
+            }
+            p{
+                margin: 0;
+                font-weight: 200;
+            }
+        }
+    }
+}

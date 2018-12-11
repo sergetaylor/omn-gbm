@@ -1,0 +1,61 @@
+.page-block{
+    position: relative;
+    //overflow-x: hidden;
+    .block-backdrop{
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    
+    
+    .block-header{
+        position: relative;
+        z-index: 1;
+        padding-left: 24px;
+        border-left: 1px solid $deep-blue;
+        label{
+            font-style: italic;
+            @include font-size($sm-font);
+            font-weight: bold;
+        }
+        h2{
+            letter-spacing: 1px;
+            margin: 0.5em 0 0 0;
+            font-weight: bold;
+            @include font-size($xl-font);
+        }
+    }
+    .block-content{
+        z-index: 1;
+        position: relative;
+    }
+    .block-footer{
+        z-index: 1;
+        position: relative;
+    }
+    
+    .shift-top{
+        transform: translateY(-80px);
+        margin-bottom: -80px;
+    }
+
+    @include md{
+        .block-header{
+            h2{
+                max-width: 980px;
+            }
+        }
+    }
+
+    &.page-block-inverse{
+     color:$white;
+     .block-header{
+        border-left: 1px solid $white;
+    }   
+    }
+}

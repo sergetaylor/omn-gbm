@@ -1,0 +1,14 @@
+.widget-partners{
+    padding-bottom: 40px;
+    img{
+        max-height: 70px;
+        margin: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+}

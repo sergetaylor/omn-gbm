@@ -1,0 +1,28 @@
+.widget-card-list{
+    > .uk-grid {
+        > div{
+            
+                border-bottom: 1px solid $mute;
+
+                .bg-pale &{
+                    border-bottom: 1px solid darken($pale,5%);
+                }
+            
+        }
+    }
+    @include md{
+        > .uk-grid {
+            > div{
+                border-bottom: none !important;
+                &:not(.uk-first-column){
+                    
+                    border-left: 1px solid $mute;
+    
+                    .bg-pale &{
+                        border-left: 1px solid darken($pale,5%);
+                    }
+                }
+            }
+        }
+    }
+}

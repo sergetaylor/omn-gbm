@@ -1,0 +1,98 @@
+$breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 960px,
+  lg: 1200px,
+  xl: 1600px
+);
+/////////////////
+// Fonts
+////////////////
+
+$xxxxl-font: (
+  null: 40px,
+  xs: 40px,
+  md: 56px,
+  lg: 80px
+);
+$xxxl-font: (
+  null: 48px,
+  xs: 42px,
+  md: 56px,
+  lg: 64px
+);
+$xxl-font: (
+  null: 36px,
+  xs: 36px,
+  md: 42px,
+  lg: 48px
+);
+$xl-font: (
+  null: 24px,
+  xs: 24px,
+  md: 28px,
+  lg: 32px
+);
+$lg-font: (
+  null: 18px,
+  xs: 18px,
+  md: 20px,
+  lg: 24px
+);
+
+$md-font: (
+  null: 16px,
+  xs: 16px,
+  md: 18px,
+  lg: 20px
+);
+
+$sm-font: (
+  null: 12px,
+  xs: 12px,
+  md: 14px,
+  lg: 16px
+);
+
+$xs-font: (
+  null: 10px,
+  xs: 10px,
+  md: 12px,
+  lg: 14px
+);
+$xxs-font: (
+  null: 10px,
+  xs: 10px,
+  md: 11px,
+  lg: 12px
+);
+
+$xxxs-font: (
+  null: 9px,
+  xs: 9px,
+  md: 9px,
+  lg: 10px
+);
+
+
+/////////////////
+// Colors
+////////////////
+$brand: #9764b4;
+$primary: #AA2FAC;
+$slate-blue: #141b4d;
+$deep-blue: #06038d; 
+$aqua: #07cdd9;
+$pale: #e8f1f2;
+
+$text: #141b4d;
+$text-mute: #CCCED0;
+$mute: #F9F9FB;
+$black: #000000;
+$white: #ffffff;
+$danger: #E52B20;
+$success: #63ce63;
+
+
+$font-en: "HelveticaNeue", sans-serif;
+$cubic: cubic-bezier(.96,-0.07,.17,1.06);

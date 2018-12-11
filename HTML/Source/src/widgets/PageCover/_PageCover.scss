@@ -1,0 +1,28 @@
+.widget-page-cover{
+    min-height: 240px;
+    color: $white;
+    
+        h1{
+            @include font-size($xxl-font);
+            margin: 50px 0 20px;
+            padding: 0;
+            max-width: 980px;
+        }
+        p{
+            display: none;
+            margin: 0;
+            @include font-size($sm-font);
+            max-width: 980px;
+            @include md{display:  block;}
+        }
+        img{
+            margin: 50px 9px 20px 0;
+            @include lg{margin: 60px 9px 20px 0;}
+        }
+        
+    
+    
+    @include md{
+        min-height: 280px;
+    }
+}

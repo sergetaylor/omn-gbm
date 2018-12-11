@@ -1,0 +1,27 @@
+.widget-sticker{
+    
+    z-index: 1;
+    position: relative;
+    .card-brief{
+        position: relative;
+        z-index: 1;
+
+    }
+    
+
+    @include md{
+        min-height: 200px;
+        .sticker-box{
+            width: 300px;
+            left: 70px;
+            position: absolute;
+            bottom: 0;   
+            transform: translateY(160px);
+            overflow: hidden;
+        }
+    }
+    @include lg{
+        min-height: 250px;
+        left: calc(50vw - 670px)
+    }
+}

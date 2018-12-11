@@ -1,0 +1,25 @@
+.card-shifted{
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    h3{
+        @include font-size($xl-font);
+        color:$slate-blue;
+    }
+    p{
+        @include font-size($sm-font);
+    }
+    @include md{
+        .uk-card{
+            padding: 16px;
+            transform: translateX(-100px) translateY(100px);
+            margin-bottom: 100px;
+            width: calc(100% + 100px);
+        }
+        img{
+           // width: calc(100% + 100px);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.card-partner{
+    .uk-card-body{
+        padding: 24px;
+        img{
+            height: 60px;
+        }
+        p{
+            @include font-size($sm-font);
+            color:$slate-blue;
+        }
+    }
+}

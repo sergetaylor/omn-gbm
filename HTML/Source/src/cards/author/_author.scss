@@ -1,0 +1,39 @@
+.card-author{
+    border: 1px solid rgba($text-mute,0.25);
+    padding: 16px;
+    @include font-size($sm-font);
+    img{
+        padding: 0 !important;
+        box-shadow: 0 2px 10px 0 rgba(153, 153, 153, 0.5);
+    }
+    b{
+        @include font-size($xs-font);
+      
+        color:$deep-blue;
+    }
+    h4{
+        @include font-size($xs-font);
+        font-weight: normal;
+        margin: 0;
+    }
+    em{
+        color:$slate-blue !important;
+        @include font-size($xs-font);
+        font-weight: normal;
+    }
+    .author-social{
+        border-left: 1px solid rgba($text-mute,0.25);
+        
+        a{
+            padding: 12px 0 12px 16px ;
+            color: $text;
+            display: block;
+            &:first-child{
+                padding-top: 0;
+            }
+            &:first-last{
+                padding-bottom: 0;
+            }
+        }
+    }
+}

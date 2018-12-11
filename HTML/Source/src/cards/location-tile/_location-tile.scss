@@ -1,0 +1,40 @@
+.card-location-tile {
+    background: rgba($white, 0.03); // i{display: inline-block;height: 80px;}
+    transition: all 0.3s ease-in-out;
+    
+    @include font-size($xs-font);
+    &:hover{
+        background: rgba($white, 0.1);
+    }
+    a {
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        color: $white;
+        display: block;
+        
+        width: 100%;
+        z-index: 1;
+    }
+    i{margin-right: 12px}
+    span {
+      
+        position: relative;
+        b {
+            display: block;
+            padding-bottom: 4px;
+            
+        }
+        z-index: 0;
+    }
+
+    .bg-pale &{
+        background: rgba($white, 0.4); 
+        &:hover{
+            background: rgba($white, 0.9);
+        }
+        a {
+            color: $text;
+        }
+        i{color: $aqua;}
+    }
+}

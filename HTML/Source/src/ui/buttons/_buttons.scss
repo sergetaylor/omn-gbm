@@ -1,0 +1,72 @@
+.uk-button {
+    
+    &:not(.button-icon) {
+        position: relative;
+        overflow: hidden;
+        height: 2.8em;
+        text-transform: uppercase;
+        transition: .2s all $cubic;
+        &:hover {
+            line-height: 8.2em;
+            box-shadow: 0 0 10px rgba(white, .5);
+        }
+        &:before {
+            content: attr(data-text);
+            position: absolute;
+            top: -2.75em;
+        }
+    }
+}
+
+.uk-button-primary {
+    border-radius: 10em;
+    background: $primary;
+    &:hover {
+        background: lighten($primary, 4%);
+    }
+}
+
+.button-aqua {
+    border-radius: 10em;
+    padding-left: 48px ;
+    padding-right: 48px ;
+    background: $aqua;
+    color: $white;
+    &:hover {
+        background: lighten($aqua, 4%);
+        color: $white;
+    }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .08)
+}
+
+.button-aqua-outline{
+    border-radius: 10em;
+    padding-left: 32px ;
+    padding-right: 32px ;
+    background: transparent;
+    border: 2px solid $aqua;
+    color: $aqua;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .08);
+    &:hover {
+        border-color: lighten($aqua, 4%);
+        box-shadow: 0 0px 10px rgba($aqua,0.4) !important;
+    }
+}
+
+
+.button-icon{
+    position: relative;
+    padding-left: 32px;
+    padding-right: 48px;
+    &.button-aqua,
+    &.button-aqua-outline{
+        i{
+            &:last-child{
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

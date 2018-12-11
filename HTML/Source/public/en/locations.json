@@ -1,0 +1,23 @@
+{
+    
+    "countries": {
+        "uae": {
+            "x": 390,
+            "y": 329,
+            "name": "uae",
+            "country": "UAE",
+            "url": "http://www.yahoo.com"
+        }
+        ,
+        "pakistan": {
+            "x": 725,
+            "y": 279,
+            "name": "WalletPAK",
+            "country": "Pakistan",
+            "url": "http://www.yahoo.com"
+        },
+        "hongkong":{"x":768,"y":342,"name":"TNG Wallet","country":"Hong Kong","url": "http://www.yahoo.com"},
+        "philippines":{"x":813,"y":387,"name":"PhiliPurse","country":"Philippines","url": "http://www.yahoo.com"}
+       
+    }
+}

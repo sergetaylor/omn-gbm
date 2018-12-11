@@ -1,0 +1,13 @@
+.card-helpful-links{
+    
+    .uk-list{
+        
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        @include font-size($xs-font);
+        &+ul{
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import './brief/_brief';
+@import './icon-text/_icon-text';
+@import './case-study/_case-study';
+@import './news/_news';
+@import './culture/_culture';
+@import './testimonial/_testimonial';
+@import './tweet/_tweet';
+@import './location-tile/_location-tile';
+@import './author/_author';
+@import './action-buttons/_action-buttons';
+@import './number-stat/_number-stat';
+@import './card-shifted/_card-shifted';
+@import './social-list/_social-list';
+@import './form/_form';
+@import './helpful-links/_helpful-links';
+@import './solution/_solution';
+@import './partner/_partner';
+@import './profile/_profile';
+@import './video/_video';
+@import './big-number/_big-number';
+
+
+.uk-card{
+    a{
+        .uk-icon{margin-right: 4px}
+    }
+}

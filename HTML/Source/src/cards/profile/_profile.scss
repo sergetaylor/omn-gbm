@@ -1,0 +1,76 @@
+.card-profile{
+    text-align: center;
+    border-bottom: 1px solid lighten($text-mute,10%);
+    border-radius: 0 !important;
+    
+    .uk-card-media-top{
+        img{
+            border: solid 4px transparent;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .uk-card-body{
+        padding: 24px 16px;
+        width: 100%;
+        h3{
+            @include font-size($sm-font);
+            font-style: italic;
+            margin: 0;
+        }
+        p{
+            @include font-size($xs-font);
+            font-style: italic;
+            margin: 16px 0;
+        }
+    }
+    &:hover{
+        .uk-card-media-top{
+            img{
+                border: solid 4px $aqua;
+                //box-shadow: 0 2px 14px 7px rgba(191, 191, 191, 0.5);
+                box-shadow: 0 2px 14px 7px rgba($aqua, 0.25);
+            }
+        }
+
+    }
+
+    &.active{
+        position: relative;
+        .uk-card-media-top{
+            img{
+                border: solid 4px $white;
+                box-shadow: 0 2px 14px 7px rgba(black, 0.25);
+            }
+        }
+        
+      @include md{
+        &::after{
+            position: absolute;
+            content: '';
+            width: 0px; 
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid $pale;
+    left: 50%;
+    bottom: -33px;
+    transform: translateX(-50%);
+
+        }
+      }
+      @include lg{
+        &::after{
+            
+    bottom: -43px;
+
+
+        }
+      }
+    }
+}
+
+.profile-data{
+    .uk-alert-close{
+        width: auto;
+    }
+}

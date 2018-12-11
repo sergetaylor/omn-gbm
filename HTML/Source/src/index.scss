@@ -1,0 +1,114 @@
+@import "~uikit/dist/css/uikit.min.css";
+@import "~swiper/dist/css/swiper.min.css";
+
+@import "./theme/index";
+@import "./ui/_index";
+@import "./cards/_index";
+@import "./widgets/_index";
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:$mute;
+  // overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: padding 0.3s $cubic;
+    font-family: 'Noto Sans', sans-serif;
+    @include font-size($sm-font);
+    color: $slate-blue;
+    *{
+        font-family:'Noto Sans', sans-serif;
+    }
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    font-weight: bold;
+}
+
+a {
+    color: $aqua;
+    &:hover {
+        text-decoration: none;
+        color: darken($aqua, 5%);
+    }
+}
+.max-width{max-width:980px;margin: 0 auto;}
+//
+// Background Colors
+//////////////////////
+.bg-white {
+    background: white;
+    color: $text;
+}
+
+.bg-gradient {
+    background: $deep-blue;
+    background: -moz-linear-gradient(45deg, $deep-blue 0%, $primary 50%, #7c3e98 100%);
+    background: -webkit-linear-gradient(45deg, $deep-blue 0%, $primary 50%, #7c3e98 100%);
+    background: linear-gradient(45deg, $deep-blue 0%, $primary 50%, #7c3e98 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$deep-blue', endColorstr='#7c3e98', GradientType=1);
+
+   // color:$white;
+}
+
+.bg-pale {
+    background: $pale;
+    color: $slate-blue;
+} 
+
+.bg-deep-blue{
+    background: $deep-blue;
+}
+
+.bg-slate-blue{
+    background: $slate-blue;
+}
+
+.bg-mute{
+    background: $mute;
+}
+//
+// Forms
+/////////////
+//  .form-field {
+//   .uk-form-label {
+//       @include font-size($xs-font);
+//       font-weight: bold;
+//       text-transform: uppercase;
+//   }
+//   .uk-input,
+//   .uk-select {
+//       font-weight: 200;
+//       @include font-size($xs-font);
+//   }
+// }
+
+.particles {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+.uk-card{
+    border-radius: 3px;
+}
+
+
+.has-success{ border-color: green;}
+.has-error{border-color: red;}

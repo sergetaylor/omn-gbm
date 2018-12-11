@@ -1,0 +1,28 @@
+.widget-twitter-slider {
+    .swiper-container{
+       // width: 100%;
+       padding-top: 40px;
+    }
+  .swiper-slide{
+      //width: 50%;
+      height: auto;
+
+   padding-bottom: 200px;   
+  }
+
+  .swiper-controls{
+    left: auto;
+    right: 0;
+    bottom: auto;
+    top: 0px;
+    z-index: 2;
+    .swiper-next,
+    .swiper-prev{
+      
+      padding: 0 8px 8px;
+      &.swiper-button-disabled{
+        opacity: 0.5;
+      }
+    }
+  }
+}

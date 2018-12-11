@@ -1,0 +1,15 @@
+.card-brief{
+    h2{
+        font-weight: bold;
+        @include font-size($xl-font);
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+    }
+    p{ 
+        margin: 0 0 15px 0;
+        @include font-size($sm-font);
+    }
+    a{
+
+    }
+}

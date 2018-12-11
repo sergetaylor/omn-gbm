@@ -1,0 +1,90 @@
+{
+    "name": "news_article",
+    "relationship": {
+        "type": "post",
+        "post_type": "newsroom"
+    },
+    "primary_key": [
+        "id"
+    ],
+    "keys": [
+        {
+            "name": "post_id",
+            "columns": [
+                "post_id"
+            ],
+            "unique": true
+        }
+    ],
+    "columns": [
+        {
+            "name": "id",
+            "format": "%d",
+            "null": false,
+            "auto_increment": true,
+            "unsigned": true
+        },
+        {
+            "name": "post_id",
+            "format": "%d"
+        },
+        {
+            "name": "author_image",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "author_image"
+            }
+        },
+        {
+            "name": "author_name",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "author_name"
+            }
+        },
+        {
+            "name": "author_position",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "author_position"
+            }
+        },
+        {
+            "name": "author_facebook",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "author_facebook"
+            }
+        },
+        {
+            "name": "author_linkedin",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "author_linkedin"
+            }
+        },
+        {
+            "name": "news_article",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "news_article"
+            }
+        },
+        {
+            "name": "news_blockquote",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "news_blockquote"
+            }
+        },
+        {
+            "name": "news_footer",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "news_footer"
+            }
+        }
+    ],
+    "hash": "1583bc0576c5fedd74a4254b7b0181ae",
+    "modified": 1536470281
+}

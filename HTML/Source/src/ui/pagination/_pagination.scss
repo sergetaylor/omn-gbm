@@ -1,0 +1,43 @@
+.uk-pagination{
+    
+    li{
+        border: 1px solid darken($mute,6%);
+        background: white;
+        padding: 8px 15px;
+        border-left: none;
+        &:first-child{
+            border-left: 1px solid darken($mute,6%);
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child{
+            border-radius: 0 4px  4px 0 ;
+        }
+        
+        a{
+            
+            display: block;
+            text-align: center;
+            width: 100%;
+            color:$deep-blue;
+            &:hover{
+                color: $aqua;
+            }
+        }
+
+        &.uk-active{
+            background:$aqua;
+            color:$white;
+            a,span{
+                color:$white;
+            }
+        }
+
+        &.uk-disabled{
+            // background:$aqua;
+            // color:$white;
+            // a,span{
+            //     color:$white;
+            // }
+        }
+    }
+}

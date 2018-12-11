@@ -1,0 +1,43 @@
+.card-tweet {
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    height: 100%;
+    
+    i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $white;
+        border-radius: 4px;
+        transform: translateX(50%) translateY(-50%);
+        padding: 10px;
+        color: $text-mute;
+    }
+    
+    .uk-card-body{
+        margin-bottom: -50px;
+        h3{
+            @include font-size($lg-font);
+            a{color:#141b4d;}
+        }
+        p{
+            @include font-size($sm-font);
+        }
+    }
+    .uk-card-media-bottom {
+        transform: translateX(30px) translateY(50%);
+        position: absolute;
+        bottom: 0;
+        
+    }
+
+    .uk-card-media-bottom{
+        img{
+            border-radius: 4px;
+        }
+    }
+    
+    
+}

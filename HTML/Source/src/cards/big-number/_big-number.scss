@@ -1,0 +1,19 @@
+.card-big-number{
+    text-align: center;
+    color: $aqua;
+    b{
+        font-weight: bold;
+        opacity: 0.5;
+        @include font-size($xxxxl-font);
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        @include font-size($xs-font);
+        font-weight: bold;
+    }
+}

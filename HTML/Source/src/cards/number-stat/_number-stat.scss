@@ -1,0 +1,33 @@
+.card-number-stat{
+    border: 1px solid $deep-blue;
+    color: $deep-blue;
+    box-shadow: 0 2px 20px 0 rgba($deep-blue, 0.15);
+    text-align: center;
+    padding: 0;
+    min-width: 180px;
+    position: relative;
+    big{
+        //@include font-size($xxxxl-font);
+        display: block;
+        font-size: 100px;
+        opacity: 0.15;
+        line-height: 1em;
+        letter-spacing: -1px;
+        margin: 0;
+        font-weight: 700;
+        padding: 16px 24px;
+    }
+    p{
+        @include font-size($xs-font);
+       // transform: translateY(-100%);
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+        z-index: 1;
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

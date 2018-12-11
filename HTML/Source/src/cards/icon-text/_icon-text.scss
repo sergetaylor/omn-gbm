@@ -1,0 +1,51 @@
+.card-icon-text {
+    height: 100%;
+    a {
+        height: 100%;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+        color: $slate-blue;
+        display: block;
+        padding: 32px;
+        &:hover {
+            background: rgba($white,0.2);
+            color: $aqua !important;
+            box-shadow: 0 2px 20px 0 rgba(7, 205, 217, 0.14);
+            svg {
+                fill: $aqua;
+            }
+            p {
+                color: $aqua;
+            }
+        }
+    }
+    img,
+    svg {
+        max-width: 40px;
+        display: inline- block;
+        margin-right: 15px;
+        vertical-align: middle;
+        fill: $slate-blue;
+    }
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        color: $slate-blue;
+        font-weight: bold;
+        @include font-size($xxs-font);
+            text-transform: uppercase;
+    }
+    @include md {
+        text-align: center;
+        p {
+            display: block;
+        }
+        img,
+        svg {
+            max-width: 50px;
+            display: inline-block;
+            margin: 0;
+            float: none;
+        }
+    }
+}

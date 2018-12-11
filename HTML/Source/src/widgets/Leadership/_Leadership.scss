@@ -1,0 +1,31 @@
+.widget-leadership{
+    .card-profile{
+        transition: all 0.3s ease-in-out;
+      
+    }
+    .card-content{
+        background: $pale;
+        @include font-size($sm-font);
+        //position: relative;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 10000000;
+        width: calc(100% - 40px);
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        @include md{
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 100%;
+            transform: none;
+        }
+    }
+    
+    .on{
+        .card-profile:not(.active){
+            opacity: 0.5;
+        }
+    }
+}

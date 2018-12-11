@@ -1,0 +1,32 @@
+.widget-footer{
+    text-align: center;
+    hr{
+        width: 100%;
+        border-top: 1px solid rgba(white,0.5);
+        height: 1px;
+    }
+    
+    .uk-navbar-nav
+    {
+        a{
+            color:$white;
+            @include font-size($xs-font);
+            text-transform: capitalize !important;
+            &:hover{
+                color:$white;
+            }
+        }
+    }
+    .uk-iconnav{
+        a{
+            color:$white;
+            padding: 10px;
+
+        }
+    }
+    
+    .uk-text-meta{
+        color:$white;
+        padding: 12px 24px;
+    }
+}

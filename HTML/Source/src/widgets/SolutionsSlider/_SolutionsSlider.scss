@@ -1,0 +1,28 @@
+.widget-solutions-slider {
+    .swiper-slide{
+      padding: 10px 0px;
+    }
+    .swiper-pagination{
+      margin: 40px auto;
+      position: relative;
+      .swiper-pagination-bullet {
+        background: $aqua;
+        margin: 8px 10px;
+
+        transition: all 0.3s $cubic;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active{
+          background: $aqua;
+          width: 24px;
+          height: 24px;
+          margin: 0 2px;
+        box-shadow: 0 0 0px 8px rgba($aqua, 0.25);
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+      
+    }
+}

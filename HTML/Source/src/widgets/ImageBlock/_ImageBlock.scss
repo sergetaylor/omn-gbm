@@ -1,0 +1,7 @@
+.widget-image-block{
+    &:not(.no-transparency){
+        img{
+            opacity: 0.5;
+        }
+    }   
+}

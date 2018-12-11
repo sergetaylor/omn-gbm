@@ -1,0 +1,43 @@
+article{
+    line-height: 1.5em;
+    h1,
+        h2 {
+            @include font-size($lg-font);
+            color: $deep-blue;
+        }
+        h3 {
+            @include font-size($md-font);
+            color: $deep-blue;
+        }
+        h4{
+            @include font-size($sm-font);
+            color: $deep-blue;
+        }
+        b{
+          
+            color: $deep-blue;
+        }
+        em {
+            color: $deep-blue;
+         //   font-weight: bold;
+        }
+        p {
+            @include font-size($sm-font);
+        }
+        img {
+            max-width: 100%;
+            padding: 8px 0;
+        }
+        blockquote {
+            border-left: 2px solid $deep-blue;
+            padding-left: 40px;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDUwIDUwIj4gICAgPHRleHQgZmlsbD0iIzE0MUI0RCIgZmlsbC1ydWxlPSJldmVub2RkIiBmb250LWZhbWlseT0iUGxheWZhaXJEaXNwbGF5LUJvbGQsIFBsYXlmYWlyIERpc3BsYXkiIGZvbnQtc2l6ZT0iNTYiIGZvbnQtd2VpZ2h0PSJib2xkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcgLTIwKSI+ICAgICAgICA8dHNwYW4geD0iMTUiIHk9IjYxIj7igJw8L3RzcGFuPiAgICA8L3RleHQ+PC9zdmc+);
+
+            background-repeat: no-repeat;
+            background-position: 12px 5px;
+            background-size: 32px;
+            p {
+                font-style: normal;
+            }
+        }
+}

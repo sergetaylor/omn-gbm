@@ -1,0 +1,61 @@
+.card-solution{
+    text-align: center;
+    .uk-card-media-top{
+        position: relative;
+        a {
+            transition: all 0.3s ease-in-out;
+            color: $slate-blue;
+            display: block;
+            padding: 24px;
+            
+        }
+        img,
+        svg {
+            max-width: 40px;
+            display: inline- block;
+            margin-right: 15px;
+            vertical-align: middle;
+            fill: $slate-blue;
+        }
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            color: $slate-blue;
+            font-weight: bold;
+            margin-bottom: 0;
+            @include font-size($xxs-font);
+            text-transform: uppercase;
+            
+        }
+        
+        @include md {
+            text-align: center;
+            p {
+                display: block;
+            }
+            img,
+            svg {
+                max-width: 50px;
+                display: inline-block;
+                margin: 0;
+                float: none;
+            }
+        }
+        &:after{
+            content: '';
+            width: 50%;
+            height: 1px;
+            background: darken($mute,5%);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+    .uk-card-body{padding: 24px;
+    a{
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        @include font-size($xs-font);
+    }}
+}

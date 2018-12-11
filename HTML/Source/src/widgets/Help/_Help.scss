@@ -1,0 +1,38 @@
+.widget-help{
+    //margin-top: -50%;
+    z-index: 1;
+    position: relative;
+    //overflow: hidden;
+    .help-box{
+        right: 0;
+        position: absolute;
+        top: 0;   
+        transform: translateY(-50%);
+        width: calc(100% - 80px);
+        overflow: hidden;
+      
+    }
+
+    .card-brief{
+        position: relative;
+        z-index: 1;
+
+    }
+    
+
+    @include md{
+        .help-box{
+            width: 70%;
+            border-radius: 3px 0 0 3px;
+        }
+        
+    }
+    @include lg{
+        .help-box{
+            width: 60%;
+            .card-brief{
+                padding-right: calc(50vw - 640px);
+            }
+        }
+    }
+}

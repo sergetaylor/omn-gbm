@@ -1,0 +1,83 @@
+.widget-secondary-nav{
+    position: relative;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);   
+    background: $white;
+    width: 100%;
+   // overflow-x: auto;
+   .swiper-container{
+       
+       padding: 0 40px;
+       .swiper-button-next,
+       .swiper-button-prev{
+           background: #f7f7f7;
+           height: 56px;
+           width: 40px;
+           top: 0;
+           margin: 0;
+           i{
+               color:$aqua;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%)
+        }
+
+        &.swiper-button-disabled{
+            display: none;
+        }
+       }
+       .swiper-button-next{right: 0}
+       .swiper-button-prev{left: 0;}
+   }
+    .uk-navbar-nav{
+        width: 100%;
+        //padding-right: 50px;
+        li{
+            a{
+                @include font-size($xxs-font);
+                height: 56px;
+                //min-width: 200px;
+                white-space: nowrap;
+                color:$slate-blue;
+                text-transform: uppercase;
+                font-weight: bold;
+                position: relative;
+                &::after{
+                    content: '';
+                    height: 4px;
+                    width: 0%;
+                    background: $aqua;
+                    border-radius: 4px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all 0.3s $cubic;
+                }
+                &:hover{
+                        &::after{
+                            width: 80%;
+                        }
+                }
+            }
+            &.uk-active,
+                &.active{
+                    a{
+                        color:$aqua;
+                        &::after{
+                            width: 80%;
+                        }
+                    }
+                }
+                
+        }
+
+        .slide{
+            &:last-child{
+            
+               // padding-right: 30px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,15 @@
+.uk-input{
+border-radius: 3px;
+border-color: #e8f1f2;
+}
+.uk-select{
+    border-color: transparent;
+border-radius: 3px;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+position: relative;
+&:not([multiple]):not([size]){
+    	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NjY2VkMCIgc3Ryb2tlLXdpZHRoPSIxLjAzIiBwb2ludHM9IjE2IDcgMTAgMTMgNCA3Ij48L3BvbHlsaW5lPjwvc3ZnPg==);
+    background-position: 98% 50%;
+}
+
+}

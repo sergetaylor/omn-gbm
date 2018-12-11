@@ -1,0 +1,23 @@
+.widget-filters {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    background: $white;
+    display: block;
+    position: relative;
+    z-index: 2;
+    .uk-input {
+        background-color: $mute;
+    }
+    .uk-form-icon-flip{
+        color:$aqua;
+    }
+    .uk-inline{
+        width: 100%;
+    }
+    .filter-hidden{
+        display: none;
+        @include md{
+            display: initial;
+        }
+    }
+}

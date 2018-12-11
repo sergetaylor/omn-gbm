@@ -1,0 +1,135 @@
+.widget-article {
+    max-width: 980px;
+    margin: -120px auto 0;
+    border-radius: 3px 3px 0 0;
+    .article-header {
+        color: $white;
+        position: relative;
+        z-index: 1;
+        
+      
+        .header-title {
+          
+            position: relative;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            .title-wrapper {
+                position: relative;
+                z-index: 1;
+                padding-left: 20px;
+                border-left: 1px solid $white;
+            }
+            label {
+                font-style: italic;
+                @include font-size($sm-font);
+                font-weight: bold;
+            }
+            h2 {
+                margin: 0.5em 0 0 0;
+                font-weight: bold;
+                @include font-size($xl-font);
+            }
+        }
+        .header-backdrop {
+            border-radius: 3px 3px 0 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            
+            background-size: cover;
+            background-position: center;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+        .header-meta {
+            color: $text;
+            position: relative;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            .uk-iconnav {
+                li {
+                    width: 100%;
+                    padding: 0px 12px;
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    @include font-size($xs-font);
+                }
+            }
+        }
+        @include sm {
+            .header-meta {
+                .uk-iconnav {
+                    li {
+                        width: auto;
+                        &:not(:last-child) {
+                            border-right: 1px solid $text-mute;
+                        }
+                    }
+                }
+            }
+        }
+        @include md {
+            .header-title {
+                padding-top: 130px;
+                position: initial;
+            }
+            .header-meta {
+                color: $white;
+                .uk-iconnav {
+                    li {
+                        &:not(:last-child) {
+                            border-right: 1px solid rgba($white, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .article-body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .card-author{
+            margin-bottom: 24px;
+        }
+
+        .card-number-stat{
+            margin: 24px auto;
+        }
+
+        @include md {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+    @include md {
+        margin: -120px auto 80px;
+    }
+}
+
+.article-pagination{
+    margin: 0 auto;
+    background: none;
+    max-width: 980px;
+    margin-top: -40px;
+    li{
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        &:first-child{
+            border: none;
+        }
+        a{
+            color:$aqua;
+            font-weight: bold;
+            text-transform: uppercase;
+            @include font-size($xs-font);
+            letter-spacing: 0.5px;
+        }
+        background: none;
+        border: none;
+    }
+}

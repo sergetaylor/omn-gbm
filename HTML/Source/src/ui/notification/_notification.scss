@@ -1,0 +1,24 @@
+.uk-notification{
+        //background: $aqua;
+        border-radius: 4px;
+        .uk-notification-message{
+            color:$white;
+            @include font-size($xs-font);
+        background: $aqua;
+        border-radius: 4px;
+    }
+
+    .uk-notification-message-danger{
+        background: red;
+
+    }
+}
+
+.success-note{
+    border-radius: 4px;
+            color:$white;
+            @include font-size($xs-font);
+        background: $aqua;
+        padding: 10px;
+        margin: 10px 0;
+}

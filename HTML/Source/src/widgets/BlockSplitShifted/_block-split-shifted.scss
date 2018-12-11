@@ -1,0 +1,29 @@
+.widget-block-split-shifted{
+    .uk-cover-container{
+        margin-bottom: 16px;
+    }
+    .uk-card{
+        
+        background: $white;
+        border-radius: 3px;
+        .uk-card-body{
+            padding: 24px ;
+            h3{
+                @include font-size($xl-font);
+            }
+            p{
+                @include font-size($sm-font);
+            }
+        }
+
+        
+    }
+
+    .uk-grid-small{
+        >div:last-child{
+            @include md{
+                transform: translateY(-80px);
+            }
+        }
+    }
+}

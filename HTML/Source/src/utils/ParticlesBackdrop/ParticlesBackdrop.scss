@@ -1,0 +1,12 @@
+.particles-backdrop{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+
+    .block-newsroom &{
+        height: 70%;
+    width:70%;
+    }
+}

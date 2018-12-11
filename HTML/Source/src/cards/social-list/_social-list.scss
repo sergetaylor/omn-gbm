@@ -1,0 +1,33 @@
+.card-social-list{
+    h3{
+        @include font-size($md-font);
+        color:$text;
+    }
+    ul{
+        li{
+            a{
+                @include font-size($xxs-font);
+                color:$deep-blue;
+            }
+
+            i{
+                
+                height: 2em;
+                float: left;
+                margin: 2px 12px 2px 0;
+                &[uk-icon="icon:twitter; ratio:1.2"]{
+                    color:#00aced;
+                }
+                &[uk-icon="icon:facebook; ratio:1.2"]{
+                    color:#3b5998;
+                }
+                &[uk-icon="icon:linkedin; ratio:1.2"]{
+                    color:#0077b5;
+                }
+                &[uk-icon="icon:youtube; ratio:1.2"]{
+                    color:#ff0000;
+                }
+            }
+        }
+    }
+}

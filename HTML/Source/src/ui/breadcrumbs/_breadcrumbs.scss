@@ -1,0 +1,32 @@
+.uk-breadcrumb{
+    li{
+        margin: 0;
+        &:last-child>*{
+            color:$aqua;
+            @include font-size($xs-font);
+        }
+        
+        &:nth-child(n+2):not(.uk-first-column)::before{
+            content: " ";
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM1M2M0MyIgc3Ryb2tlLXdpZHRoPSIxLjAzIiBwb2ludHM9IjcgNCAxMyAxMCA3IDE2Ij48L3BvbHlsaW5lPjwvc3ZnPg==);
+            background-position: top center ;
+            background-size: 14px;
+            width: 8px;
+            height: 12px;
+
+        }
+        a{
+            @include font-size($xs-font);
+            color:$slate-blue;
+            &:hover{
+                color:$aqua;
+            }
+        }
+    }
+
+    >:nth-child(n+2):not(.uk-first-column)::before{
+        margin: 0 12px;
+    }
+    
+}
+

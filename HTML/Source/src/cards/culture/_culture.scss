@@ -1,0 +1,23 @@
+.card-culture{
+    .uk-card-body{
+        position: relative;
+        box-sizing: border-box;
+        width: 90%;
+        background: $white;
+        border-radius: 4px;
+        color:$slate-blue;
+        p{}
+        em{
+            color:$slate-blue;
+            font-weight: bold;
+        }
+        z-index: 1;
+    }
+    .card-media{
+        width: 75%;
+        float: right;
+        margin-top: -100px;
+        z-index: 0;
+        img{border-radius: 4px;}
+    }
+}

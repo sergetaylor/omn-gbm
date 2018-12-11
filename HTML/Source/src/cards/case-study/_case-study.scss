@@ -1,0 +1,41 @@
+.card-case-study {
+    border-radius: 4px;
+    .uk-card-media-top {
+        border-radius: 4px 4px 0 0;
+        background: $slate-blue;
+        img{
+            opacity: 0.6;
+        }
+        h3 {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            @include font-size($lg-font);
+            a {
+                color: $white;
+                display: block;
+                padding: 40px 30px;
+                @include lg{
+                    padding: 40px;
+                }
+            }
+        }
+    }
+    .uk-card-body {
+        p{
+            @include font-size($sm-font);
+        }
+        .uk-iconnav {
+            font-weight: bold;
+            text-transform: uppercase;
+            span {
+                color: $deep-blue;
+                @include font-size($xs-font);
+            }
+        }
+        a {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
