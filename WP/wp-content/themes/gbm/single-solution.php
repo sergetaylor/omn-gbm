@@ -12,13 +12,18 @@
 <?php get_header(); ?>
 
 
+	<? 
+		$post_solution_icon = wp_get_attachment_image_src($post->solution_icon, 'full' );
+		$post_solution_icon = $post_solution_icon[0];
+    ?>
+
     <!-- Page Cover -->
     <div class="widget-page-cover bg-gradient uk-flex uk-flex-middle">
         <div class="uk-width-extend">
             <div class="uk-container">
                 <div class="uk-grid-small uk-flex-top" uk-grid>
                     <div class="uk-width-auto">
-                        <img width="40" height="40" src="<?php echo get_template_directory_uri(); ?>/media/SVG/solutions-avatar.svg" alt="...">
+                        <img width="40" height="40" src="<?php echo post_solution_icon; ?>" alt="...">
                     </div>
                     <div class="uk-width-expand">
                         <h1><?php the_field("header_title"); ?></h1>
@@ -37,13 +42,13 @@
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
             <div class="swiper-container">
-
+			<? // echo '<pre>'; print_r($post); echo '</pre>'; ?>
                 <ul class="uk-navbar-nav swiper-wrapper">
                     <li class="slide active">
                         <a href="#">Overview</a>
                     </li>
 					<?php
-						$sub_solutions = get_posts( array('post_parent' => $post->parent_id,
+						$sub_solutions = get_posts( array('post_parent' => $post->post_parent,
 						 'post_type' => $post->post_type , 'posts_per_page' => -1) );
 						foreach($sub_solutions as $solution){
 							$solution_name = $solution->solution_name;

@@ -11,6 +11,10 @@
 
 <?php get_header(); ?>
 
+	<? 
+		$post_solution_icon = wp_get_attachment_image_src($post->solution_icon, 'full' );
+		$post_solution_icon = $post_solution_icon[0];
+    ?>
 
     <!-- Page Cover -->
     <div class="widget-page-cover bg-gradient uk-flex uk-flex-middle">
@@ -18,7 +22,7 @@
             <div class="uk-container">
                 <div class="uk-grid-small uk-flex-top" uk-grid>
                     <div class="uk-width-auto">
-                        <img width="40" height="40" src="<?php echo get_template_directory_uri(); ?>/media/SVG/solutions-avatar.svg" alt="...">
+                        <img width="40" height="40" src="<?php echo $post_solution_icon; ?>" alt="...">
                     </div>
                     <div class="uk-width-expand">
                         <h1><?php the_field("header_title"); ?></h1>
@@ -43,8 +47,12 @@
                         <a href="#">Overview</a>
                     </li>
 					<?php 
-						$sub_solutions = get_posts( array('post_parent' => $post->ID, 'post_type' => $post->post_type,  'posts_per_page' => -1) );
+						$sub_solutions = get_posts( array('post_parent' => $post->ID, 
+						'post_type' => $post->post_type,  'posts_per_page' => -1) );
+						//echo $post->ID.' '.$post->post_type;
+						//echo count($sub_solutions);
 						foreach($sub_solutions as $solution){
+							//echo $solution->post_parent;
 							$solution_name = $solution->solution_name;
 							$solution_url = $solution->solution_url;
 					?>
@@ -150,6 +158,8 @@
                         <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-match" uk-grid>
                             <!-- Repeat Item-->
 			  				<?php 
+									$sub_solutions = get_posts( array('post_parent' => $post->ID, 'post_type' => $post->post_type,  'posts_per_page' => -1) );
+									// echo count($sub_solutions);
 									foreach($sub_solutions as $solution){
 										$solution_icon = wp_get_attachment_image_src($solution->solution_icon, 'full' );
 										$solution_icon = $solution_icon[0];
